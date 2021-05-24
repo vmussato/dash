@@ -1,8 +1,10 @@
 <div class="new-transaction">
   
   <p class="new-transaction__title">Nova transação</p>
-  
-  <div>
+
+  <p class="new-transaction__title-mobile"[style.position]="'absolute'">Nova transação</p>
+    
+  <div class="new-transaction__type">
     <label for="transactionType">Tipo de transação</label>
     <select [(ngModel)]="item.transactionType" name="transactionType">
       <option value="1">Compra</option>
@@ -10,18 +12,27 @@
     </select>
   </div>
 
-  <div>
+  <div class="new-transaction__name">
     <label for="itemName">Nome da Mercadoria</label>
     <input [(ngModel)]="item.transactionName" name="itemName" type="text" placeholder="Input">
   </div>
 
-  <div>
+  <div class="new-transaction__value">
     <label for="itemValue">Valor</label>
     <input [(ngModel)]="item.transactionValue" name="itemValue" type="number" placeholder="R$ 0,00">
   </div>
 
   <button  
     class="new-transaction__add-transaction-button" 
+    (click)="addTransaction()" 
+    [disabled]="item.transactionName === '' || item.transactionValue === ''"> Adicionar Transação
+  </button>
+
+  <button  
+    class="new-transaction__add-transaction-button-mobile"
+    [style.position]="'absolute'"
+    [style.top]="'250px'"
+    [style.right]="'24px'"
     (click)="addTransaction()" 
     [disabled]="item.transactionName === '' || item.transactionValue === ''"> Adicionar Transação
   </button>
