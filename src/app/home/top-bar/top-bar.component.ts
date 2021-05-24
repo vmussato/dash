@@ -15,7 +15,6 @@ export class TopBarComponent implements OnInit {
   }
 
   changeSidebar() {
-    console.log('change sidebar');
     this.showSidebar = !this.showSidebar;
   }
 }

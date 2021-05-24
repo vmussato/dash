@@ -18,7 +18,6 @@ export class NewTransactionComponent {
   constructor() { }
 
   addTransaction() {
-    console.log(this.item);
 
     this.updateTransactions.emit(this.item);
 
