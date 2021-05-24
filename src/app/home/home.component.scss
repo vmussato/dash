@@ -1,8 +1,7 @@
-.top-bar {
-  background-color: #e0e0e0;
-  height: 100px;
+.info {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 
   &__container {
     width: 80%;
@@ -10,26 +9,38 @@
     align-items: center;
     justify-content: space-between;
 
-    &__title {
+    &__new-transaction {
+      height: 280px;
+      width: 35%;
+      border: 1px solid black;
+      border-radius: 6px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      width: 200px;
-      font-size: 18px;
-    }
-
-    &__menu {
-      display: flex;
       justify-content: space-around;
-      background-color: white;
-      height: 35px;
-      width: 269px;
-      align-items: center;
 
-      &__divider {
-        width: 1px;
-        height: 15px;
-        background-color: grey;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50px;
+        width: 95%;
+
+        input {
+          height: 20px;
+        }
+        select {
+          height: 20px;
+          color: #979797;
+        }
+      }
+
+      &__add-transaction-button {
+        width: 95%;
+        background-color: black;
+        color: white;
+        height: 26px;
+        border-radius: 6px;
       }
     }
   }
