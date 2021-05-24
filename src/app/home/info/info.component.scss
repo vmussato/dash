@@ -9,64 +9,12 @@
     align-items: center;
     justify-content: space-between;
 
-    &__new-transaction {
-      height: 280px;
+    app-new-transaction {
       width: 35%;
-      border: 1px solid black;
-      border-radius: 6px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-
-      div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 50px;
-        width: 95%;
-
-        input {
-          height: 20px;
-        }
-        select {
-          height: 20px;
-          color: #979797;
-        }
-      }
-
-      &__add-transaction-button {
-        width: 95%;
-        background-color: black;
-        color: white;
-        height: 26px;
-        border-radius: 6px;
-      }
     }
 
-    &__extract {
+    app-extract {
       width: 65%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-
-      &__title {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      &__item {
-        width: 100%;
-      }
-
-      &__divider {
-        width: 90%;
-        height: 1px;
-        background-color: grey;
-      }
     }
   }
 }

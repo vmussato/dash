@@ -1,0 +1,34 @@
+.new-transaction {
+  height: 280px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+    width: 95%;
+
+    input {
+      height: 20px;
+    }
+    select {
+      height: 20px;
+      color: #979797;
+    }
+  }
+
+  &__add-transaction-button {
+    width: 95%;
+    background-color: black;
+    color: white;
+    height: 26px;
+    border-radius: 6px;
+  }
+}
