@@ -6,9 +6,10 @@
   </div>
 
   <div class="extract__item" *ngFor="let transaction of transactions">
-    <span>+</span>
-    <p>Título da mercadoria</p>
-    <p>R$12.988,89</p>
+    <span *ngIf="transaction.transactionType === 1">+</span>
+    <span *ngIf="transaction.transactionType !== 1">-</span>
+    <p>{{transaction.transactionName}}</p>
+    <p>R${{transaction.transactionValue}}</p>
   </div>
 
   <div class="extract__total">

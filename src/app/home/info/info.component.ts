@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Transaction } from 'src/app/interfaces/transaction';
 
 @Component({
   selector: 'app-info',
@@ -7,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
-  transactions: Object[] = [];
+  transactions: Transaction[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  updateTransactions(transaction: object) {
+  updateTransactions(transaction: Transaction) {
     this.transactions.push(transaction);
     console.log(this.transactions)
   }

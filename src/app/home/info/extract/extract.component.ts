@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Transaction } from '../../../interfaces/transaction';
 
 @Component({
   selector: 'app-extract',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ExtractComponent implements OnInit {
 
-  @Input() transactions: Object[] = [];
+  @Input() transactions: Transaction[] = [];
 
   constructor() { }
 
