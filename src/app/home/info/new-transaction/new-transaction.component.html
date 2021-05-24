@@ -20,7 +20,10 @@
     <input [(ngModel)]="item.transactionValue" name="itemValue" type="text" placeholder="R$ 0,00">
   </div>
 
-  <button class="new-transaction__add-transaction-button" (click)="addTransaction()"> Adicionar Transação</button>
+  <button  
+    class="new-transaction__add-transaction-button" 
+    (click)="addTransaction()" 
+    [disabled]="item.transactionName === '' || item.transactionValue === ''"> Adicionar Transação</button>
 
 </div>
 
