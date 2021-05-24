@@ -28,14 +28,18 @@
           display: none;
         }
       }
+
+      p {
+        font-weight: bolder;
+      }
     }
 
     &__menu {
       display: flex;
       justify-content: space-around;
       background-color: white;
-      height: 35px;
-      width: 269px;
+      height: 40px;
+      width: 300px;
       align-items: center;
 
       &__divider {

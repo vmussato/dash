@@ -16,6 +16,11 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: space-around;
 
+  label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
   @media only screen and (min-width: 528px) and (max-width: 700px) {
     flex-direction: row;
   }
@@ -31,6 +36,7 @@ input::-webkit-inner-spin-button {
   }
 
   &__title {
+    font-weight: 600;
     @media only screen and (max-width: 528px) {
       opacity: 0;
     }
@@ -42,6 +48,7 @@ input::-webkit-inner-spin-button {
 
   &__title-mobile {
     top: 150px;
+    font-weight: 600;
 
     @media only screen and (min-width: 700px) {
       display: none;
