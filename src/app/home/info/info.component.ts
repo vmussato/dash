@@ -18,6 +18,7 @@ export class InfoComponent implements OnInit {
 
   updateTransactions(transaction: Transaction) {
     this.transactions.push(transaction);
+    this.transactions = new Array(...this.transactions);
     console.log(this.transactions)
     localStorage.setItem('transactions', JSON.stringify(this.transactions));
   }

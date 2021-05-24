@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Transaction } from '../../../interfaces/transaction';
 
 @Component({
@@ -6,13 +6,28 @@ import { Transaction } from '../../../interfaces/transaction';
   templateUrl: './extract.component.html',
   styleUrls: ['./extract.component.scss']
 })
-export class ExtractComponent implements OnInit {
+export class ExtractComponent implements OnChanges {
 
   @Input() transactions: Transaction[] = [];
+  total = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    let total = 0;
+
+    this.transactions.forEach( transaction => {
+      if (transaction.transactionType !== 1) {
+        total += transaction.transactionValue;
+      } else {
+        total -= transaction.transactionValue;
+      }
+    });
+
+    this.total = total;
   }
 
 }
