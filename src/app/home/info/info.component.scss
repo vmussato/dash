@@ -10,11 +10,17 @@
     justify-content: space-between;
 
     app-new-transaction {
-      width: 35%;
+      width: 34%;
+      height: 100%;
     }
 
     app-extract {
-      width: 65%;
+      width: 64%;
+      height: 100%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      width: 95%;
     }
   }
 }
