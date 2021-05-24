@@ -1,6 +1,6 @@
 <div class="info">
   <div class="info__container">
-    <app-new-transaction></app-new-transaction>
-    <app-extract></app-extract>
+    <app-new-transaction (updateTransactions)="updateTransactions($event)"></app-new-transaction>
+    <app-extract [transactions]=transactions></app-extract>
   </div>
 </div>

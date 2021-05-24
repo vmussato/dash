@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
+  transactions: Object[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  updateTransactions(transaction: object) {
+    this.transactions.push(transaction);
+    console.log(this.transactions)
   }
 
 }
