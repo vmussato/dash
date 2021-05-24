@@ -16,6 +16,12 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: space-around;
 
+  &__title {
+    @media only screen and (max-width: 400px) {
+      display: none;
+    }
+  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -38,5 +44,12 @@ input::-webkit-inner-spin-button {
     color: white;
     height: 26px;
     border-radius: 6px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    border: none;
+    border-bottom: 0.5px solid black;
+    border-radius: 0px;
+    padding-bottom: 10px;
   }
 }
