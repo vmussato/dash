@@ -4,7 +4,7 @@ Um dashboard responsivo para manter controle de compras e vendas.
 
 ## Rodando o projeto
 
-Você vai precisar de uma versão recente do node instalado na sua máquina. A versão utilizado foi a 14.
+Você vai precisar de uma versão recente do node instalado na sua máquina (12 para cima). A versão utilizado foi a 14.
 
 Clone o projeto
 
