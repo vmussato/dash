@@ -13,7 +13,7 @@ export class InfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.transactions = JSON.parse(localStorage.getItem('transactions') || '{}');
+    this.transactions = JSON.parse(localStorage.getItem('transactions') || '[]');
   }
 
   updateTransactions(transaction: Transaction) {

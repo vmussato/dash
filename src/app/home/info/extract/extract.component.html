@@ -4,7 +4,7 @@
     <p>Mercadoria</p>
     <p>Valor</p>
   </div>
-
+  
   <div class="extract__item" *ngFor="let transaction of transactions">
     <span *ngIf="transaction.transactionType === 1">+</span>
     <span *ngIf="transaction.transactionType !== 1">-</span>
