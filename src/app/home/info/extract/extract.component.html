@@ -9,13 +9,13 @@
     <span *ngIf="transaction.transactionType === 1">-</span>
     <span *ngIf="transaction.transactionType !== 1">+</span>
     <p>{{transaction.transactionName}}</p>
-    <p>R${{transaction.transactionValue}}</p>
+    <p>R${{transaction.transactionValue | number }}</p>
   </div>
 
   <div class="extract__total">
     <p>Total</p>
     <div>
-      <p [style.textAlign]="'right'">R$ {{total}}</p>
+      <p [style.textAlign]="'right'">R$ {{total | number }}</p>
       <p class="extract__total__status-tag" *ngIf="total > 0">[LUCRO]</p>
       <p class="extract__total__status-tag" *ngIf="total < 0">[PREJUÍZO]</p>
     </div>
