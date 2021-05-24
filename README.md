@@ -1,28 +1,27 @@
-# Dash
+# Dashboard de compras
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+Um dashboard responsivo para manter controle de compras e vendas.
 
-## Development server
+## Rodando o projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Você vai precisar de uma versão recente do node instalado na sua máquina. A versão utilizado foi a 14.
 
-## Code scaffolding
+Clone o projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+git clone https://github.com/vmussato/dash.git
+```
 
-## Build
+Instale as dependências
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+npm install
+```
 
-## Running unit tests
+Inicie o projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+npm start
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# dash
+O projeto deve abrir no seu navegador na porta 4200, caso não abra automaticamente navegue até http://localhost:4200/
