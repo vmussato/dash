@@ -25,3 +25,7 @@ npm start
 ```
 
 O projeto deve abrir no seu navegador na porta 4200, caso não abra automaticamente navegue até http://localhost:4200/
+
+## Versão deployada
+
+Uma versão deployada pode ser encontrada em [aqui](https://dash-rho.vercel.app)
