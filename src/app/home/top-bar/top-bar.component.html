@@ -13,11 +13,10 @@
       <div>Configurações</div>
     </div>
   </div>
+<div class="sidebar" [hidden]="!showSidebar">
+  <p class="sidebar__close-button" (click)="changeSidebar()">&#x2715;</p>
+  <div><p>Resumo</p></div>
+  <div><p>Dashboard</p></div>
+  <div><p>Configurações</p></div>
 </div>
-
-<div class="sidebar">
-  <p>X</p>
-  <div>Resumo</div>
-  <div>Dashboard</div>
-  <div>Configurações</div>
 </div>
