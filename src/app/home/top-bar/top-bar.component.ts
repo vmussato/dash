@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
+  showSidebar = false
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  changeSidebar() {
+    this.showSidebar = !this.showSidebar;
+  }
 }

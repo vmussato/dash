@@ -36,5 +36,10 @@
     padding: 5px 40px;
     margin-top: 2px;
     margin: 5px 0;
+
+    &__status-tag {
+      font-size: 10px;
+      text-align: right;
+    }
   }
 }

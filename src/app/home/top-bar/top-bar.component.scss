@@ -16,6 +16,18 @@
       justify-content: space-between;
       width: 200px;
       font-size: 18px;
+
+      @media only screen and (max-width: 700px) {
+        width: 100%;
+      }
+
+      &__mobile-nav {
+        font-size: 50px;
+        cursor: pointer;
+        @media only screen and (min-width: 700px) {
+          display: none;
+        }
+      }
     }
 
     &__menu {
@@ -31,10 +43,23 @@
         height: 15px;
         background-color: grey;
       }
+
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
     }
 
     @media only screen and (max-width: 1024px) {
       width: 95%;
     }
   }
+}
+
+.sidebar {
+  background-color: black;
+  color: white;
+  display: none;
+  height: 100%;
+  width: 25%;
+  z-index: 1000;
 }
